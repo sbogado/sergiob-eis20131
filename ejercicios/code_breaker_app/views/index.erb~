@@ -1,0 +1,12 @@
+<label> Estado: </label><%= @code_breaker.found_code%><br/>
+<label> Vidas Restantes: </label><%= @code_breaker.life%><br/>
+
+<form id = form1 action="/adivinar" method="post">
+  <label> Letra a Adivinar </label>
+  <input id = "letra" type = "text" name = "letra">
+  <br/>
+  <input type= "submit" value = "Adivinar"/>
+</form> 
+
+<%= @intento %><br/>
+<%= @fin de juego %><br/>

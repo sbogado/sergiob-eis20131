@@ -1,0 +1,6 @@
+Feature: prueba
+
+  Scenario: home page
+    When I am on the home page
+    Then I should see "mama"
+    

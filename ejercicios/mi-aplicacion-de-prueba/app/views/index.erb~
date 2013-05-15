@@ -1,0 +1,15 @@
+<label> Ya vienes acertando </label> <%=@cantidad_de_aciertos%><label> Veces!</label><br/>
+<label> Vamos a ver si te sabes esta: </label>
+<%=@random1%> <label> + </label> <%=@random2%><br/>
+
+<form id = form1 action="/respuesta" method="post">
+  <label> Intenta un Resultado:  </label>
+  <input id = "resultado" type = "text" name = "resultado">
+  <br/>
+  <label>                </label> <input type= "submit" value = "Submit"/><br/>
+</form> 
+
+<%=@feedback %><br/>
+<%=@feedback %>
+
+

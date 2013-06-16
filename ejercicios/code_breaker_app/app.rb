@@ -6,10 +6,8 @@ class App < Sinatra::Base
   enable :sessions
  
   get '/' do
-    session[:intento] = ''
-    session[:fin_de_juego] = ''
-    session[:code_breaker] = CodeBreaker.new(params[:palabra].to_s)
-    redirect '/juego'
+    CodeBreaker.check_date('2013-01.01')
+		CodeBreaker.check_date('hola')
   end
 
   get '/juego' do

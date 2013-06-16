@@ -29,8 +29,6 @@ class App < Sinatra::Base
       session[:intento] = 'ups!'
     end
 
-    end
-
     if(session[:code_breaker].perdiste)
       session[:fin_de_juego] = 'Juego terminado, perdiste!'
     end

@@ -18,6 +18,10 @@ class CodeBreaker
     @found_code.join("")
   end
 
+	def self.check_date(date)  
+		return ((ParseDate.parsedate date)[0] != nil &&(ParseDate.parsedate date)[1] != nil && (ParseDate.parsedate date)[2] != nil)
+  end
+
   def found_code=(code)
     @found_code = code
   end
